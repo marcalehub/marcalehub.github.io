@@ -1,0 +1,57 @@
+@keyframes scale-up{
+    to {scale:1.5;}
+}
+
+@keyframes fade-away{
+    to {opacity:0;}
+}
+
+section{
+    view-timeline: --scroll;
+}
+
+h1 span:first-child{
+    animation: fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 30% exit 35%;
+}
+
+.card span:first-child{
+    animation: fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 30% exit 35%;
+}
+
+.card span:last-child{
+    animation: 
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range:
+        exit 0% exit 30%,
+        exit 30% exit 100%;
+}
+
+h1 span:last-child{
+    animation: 
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range:
+        exit 0% exit 30%,
+        exit 30% exit 35%;
+}
+
+section:nth-of-type(1){
+    height: 70vh;
+}
+section:nth-of-type(2){
+    height: 180vh;
+}
+section:nth-of-type(3){
+    height: 120vh;
+}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}

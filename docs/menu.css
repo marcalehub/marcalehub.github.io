@@ -1,0 +1,22 @@
+.menubar {
+    overflow: hidden;
+    background: rgb(32, 32, 32);
+    display: flex;
+    margin-top: -22px;
+  }
+.menubar a{
+    color: white;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+.menubar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.menubar a.active{
+    background-color: #858585;
+    color: white;
+}
