@@ -13,13 +13,13 @@ section{
 h1 span:first-child{
     animation: fade-away both linear;
     animation-timeline: --scroll;
-    animation-range: exit 30% exit 35%;
+    animation-range: exit 0% exit 100%;
 }
 
 .card span:first-child{
     animation: fade-away both linear;
     animation-timeline: --scroll;
-    animation-range: exit 30% exit 35%;
+    animation-range: exit 0% exit 100%;
 }
 
 .card span:last-child{
@@ -28,8 +28,8 @@ h1 span:first-child{
         fade-away both linear;
     animation-timeline: --scroll;
     animation-range:
-        exit 0% exit 30%,
-        exit 30% exit 100%;
+        exit 0% exit 100%,
+        exit 50% exit 100%;
 }
 
 h1 span:last-child{
@@ -38,15 +38,15 @@ h1 span:last-child{
         fade-away both linear;
     animation-timeline: --scroll;
     animation-range:
-        exit 0% exit 30%,
-        exit 30% exit 35%;
+        exit 0% exit 100%,
+        exit 50% exit 100%;
 }
 
 section:nth-of-type(1){
-    height: 10vh;
+    height: 100vh;
 }
 section:nth-of-type(2){
-    height: 160vh;
+    height: 120vh;
 }
 *, *:after, *:before{
     box-sizing: border-box;
