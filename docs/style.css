@@ -40,10 +40,9 @@ h1{
 
 section div{
     width: 800px;
-    max-width: 100vw;
+    max-width: auto;
     padding: 0 1rem;
 }
-
 body{
     background-color: black;
     color: white;
